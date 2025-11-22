@@ -29,7 +29,7 @@ Zanim zaczniesz, upewnij się, że masz zainstalowane:
 1.  Otwórz terminal (lub Git Bash) w folderze, w którym chcesz zapisać projekt.
 2.  Wpisz komendę:
     ```bash
-    git clone [https://github.com/Tharon23/Baza-Danych-Projekt-Warsztat-Samochodowy/tree/main](https://github.com/Tharon23/Baza-Danych-Projekt-Warsztat-Samochodowy/tree/main)
+    git clone https://github.com/Tharon23/Baza-Danych-Projekt-Warsztat-Samochodowy.git
     ```
 3.  Otwórz pobrany folder w Visual Studio Code.
 
