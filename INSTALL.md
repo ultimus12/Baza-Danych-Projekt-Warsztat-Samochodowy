@@ -29,9 +29,8 @@ Zanim zaczniesz, upewnij się, że masz zainstalowane:
 1.  Otwórz terminal (lub Git Bash) w folderze, w którym chcesz zapisać projekt.
 2.  Wpisz komendę:
     ```bash
-    git clone [https://github.com/TWOJ_NICK/warsztat-baza-danych.git](https://github.com/TWOJ_NICK/warsztat-baza-danych.git)
+    git clone [https://github.com/Tharon23/Baza-Danych-Projekt-Warsztat-Samochodowy/tree/main](https://github.com/Tharon23/Baza-Danych-Projekt-Warsztat-Samochodowy/tree/main)
     ```
-    *(Podmień `TWOJ_NICK` na właściwy login właściciela repozytorium)*
 3.  Otwórz pobrany folder w Visual Studio Code.
 
 ## 🗄️ Krok 3: Utworzenie bazy danych
