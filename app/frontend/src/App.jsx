@@ -164,6 +164,7 @@ function App() {
               <thead>
                 <tr>
                   <th>Samochód</th>
+                  <th>Opis Usterki</th>
                   <th>Klient</th>
                   <th>Status</th>
                   <th>Mechanik</th>
@@ -175,6 +176,10 @@ function App() {
                     <td>
                       <div style={{ fontWeight: 600 }}>{order.samochod}</div>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{new Date(order.data_przyjecia).toLocaleDateString()}</div>
+                    </td>
+
+                    <td style={{ maxWidth: '200px', fontSize: '0.9rem', color: '#cbd5e1' }}>
+                      {order.opis}
                     </td>
                     <td>{order.wlasciciel}</td>
                     <td>
