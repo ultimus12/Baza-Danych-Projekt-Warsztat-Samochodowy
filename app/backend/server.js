@@ -147,9 +147,14 @@ app.patch('/api/orders/:id', async (req, res) => {
   }
 
   try {
-    // If finishing, set end date
+    // JEŚLI ZAMYKAMY ZLECENIE -> USTAW DATĘ I KOSZT (np. losowy między 100 a 500 zł)
     if (status === 'Zakonczone') {
-      await pool.query("UPDATE zlecenia SET status = $1, data_zakonczenia = CURRENT_TIMESTAMP WHERE id_zlecenia = $2", [status, id]);
+      const randomKoszt = Math.floor(Math.random() * 400) + 100; // Demo: Losowa cena
+      
+      await pool.query(
+        "UPDATE zlecenia SET status = $1, data_zakonczenia = CURRENT_TIMESTAMP, koszt_robocizny = $2 WHERE id_zlecenia = $3", 
+        [status, randomKoszt, id]
+      );
     } else {
       // Logic for Mechanic Availability Check
       if (status === 'W trakcie') {
